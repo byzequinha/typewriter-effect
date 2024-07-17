@@ -1,0 +1,38 @@
+/* Uso de uma Fonte especifica */
+@font-face {
+    font-family: "Typewriter";
+    src: url("./fonts/atypewriter.ttf") format("truetype");
+}
+
+* {
+    font-family: "Typewriter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.typewriter h1 {
+    font-size: 3em;
+    border-right: 0.05em solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
